@@ -26,3 +26,6 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 This app is made with _TypeScript + Vite + TailwindCss_
+
+JavaScript version is also available
+[Javascript Version](https://github.com/abdullahjavaid86/react-boilerplate-with-vite-tailwind)
