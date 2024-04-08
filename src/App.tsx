@@ -1,14 +1,12 @@
 import './App.css';
 
 import { BaseModalBackground, ModalProvider } from 'styled-react-modal';
-import { Route, Routes } from 'react-router-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 
+import { AppRoutes } from './routes/routes';
 import { Content } from './layouts/content';
 import { Footer } from './layouts/footer';
 import { Header } from './layouts/header';
-import { Home } from './pages/home';
-import { routePaths } from './constants/paths';
 import { useThemeChooser } from './contexts/theme-chooser';
 
 export const GlobalStyles = createGlobalStyle`
@@ -22,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const FadingBackground: any = styled(BaseModalBackground)`
-  opacity: ${(props) => props.opacity};
+  opacity: ${(props) => props.theme.opacity};
   transition: all 0.3s ease-in-out;
 `;
 
@@ -34,9 +32,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Content>
-          <Routes>
-            <Route path={routePaths.Home} element={<Home />} />
-          </Routes>
+          <AppRoutes />
         </Content>
         <Footer />
       </ModalProvider>

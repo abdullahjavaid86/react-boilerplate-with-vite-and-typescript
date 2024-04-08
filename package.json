@@ -1,7 +1,7 @@
 {
-  "name": "open-weather",
+  "name": "react-vite-template-ts",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 3000",
@@ -31,7 +31,7 @@
     "axios": "^1.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.19.0",
+    "react-router-dom": "^6.22.3",
     "styled-components": "^6.1.1",
     "styled-react-modal": "^3.0.1",
     "zustand": "^4.4.6"

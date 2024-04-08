@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { ModalComponent } from '../components/shared/modal';
+import styled from 'styled-components';
 import { useToggle } from '../hooks/useToggle';
 
 const StyledDiv = styled.div`
